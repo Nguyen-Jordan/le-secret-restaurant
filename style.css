@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-background {
+    background: url(images/header-background1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    height: 44px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-menu-item {
+    font-size: 20px;
+    margin: 0 30px;
+    line-height: 40px;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    color: black;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    color: #ED6C14;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: black;
+    background: #5fa578;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 0 30px;
+    line-height: 40px;
+    cursor: pointer;
+
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #5fa578;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 50px;
+    }
+
+    .nav-menu-link {
+        color: white;
+    }
+
+    .nav-menu-link:hover ,
+    .nav-menu-link_active {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .element-price-list-title,
+    .element-price-list-price {
+        font-size: 0.8em;
+    }
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.footer-background {
+    background: url(images/footer-background1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 261px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    -webkit-box-shadow: 0 0 36px -7px rgba(171,171,171,1);
+    -moz-box-shadow: 0 0 36px -7px rgba(171,171,171,1);
+    box-shadow: 0 0 36px -7px rgba(171,171,171,1);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+input, textarea, select {
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    padding: 0.3rem;
+    border: solid 1px;
+}
+
+textarea {
+    max-width: 400px;
+    letter-spacing: 1px;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 11px -7px #bac4bf;
+    -moz-box-shadow: 0 0 11px -7px #bac4bf;
+    box-shadow: 0 0 11px -7px #bac4bf;
+    border: solid 1px #d5e1db;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font: 300 2rem 'Oswald', sans-serif;
+    letter-spacing: 6px;
+}
+.form-horizontal {
+    max-width: 400px;
+    font-weight: 400;
+}
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 380px;
+    background-color: #d5e1db;
+    border: none;
+    border-radius: 7px;
+    font: 300 14px 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+.send-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #ED6C14;
+}
+
+.menu-cocktail {
+    margin-top: 2%;
+}
+
+.element-price-list-text {
+    margin-bottom: 20px;
+}
+
+.element-price-list-title,
+.element-price-list-price {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 0.5em;
+}
+
+.element-price-list-separator {
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #498569;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 0;
+}
+
+.menu {
+    list-style: none;
+}
+
+.element-price-list-description {
+    color: #1B605D;
+    font-size: 0.8em;
+}
