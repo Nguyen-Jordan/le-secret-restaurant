@@ -160,13 +160,6 @@ label {
     margin-bottom: 0.5rem;
 }
 
-.section-header {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    font: 300 2rem 'Oswald', sans-serif;
-    letter-spacing: 6px;
-}
 .form-horizontal {
     max-width: 400px;
     font-weight: 400;
@@ -185,10 +178,6 @@ label {
     cursor: pointer;
     color: white;
     background-color: #ED6C14;
-}
-
-.menu-cocktail {
-    margin-top: 2%;
 }
 
 .element-price-list-text {
@@ -212,9 +201,6 @@ label {
     height: 0;
 }
 
-.menu {
-    list-style: none;
-}
 
 .element-price-list-description {
     color: #1B605D;
