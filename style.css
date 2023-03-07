@@ -1,8 +1,9 @@
-* {
-    margin: 0;
-}
-body {
+
+*{
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .header-background {
     background: url(images/header-background1.png) no-repeat;
